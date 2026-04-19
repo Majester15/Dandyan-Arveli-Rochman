@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Saya</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#2c3e50;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    background:#ffffff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    font-size:18px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2c3e50;
+    margin-left:20px;
+    font-size:14px;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:50px 20px;
+    animation:fadeDown 1s ease;
+}
+
+.hero img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:26px;
+}
+
+.hero p{
+    color:#7f8c8d;
+}
+
+/* SECTION */
+.section{
+    max-width:900px;
+    margin:30px auto;
+    padding:0 20px;
+    animation:fadeUp 1s ease;
+}
+
+.section h2{
+    font-size:18px;
+    margin-bottom:10px;
+    border-left:4px solid #3498db;
+    padding-left:8px;
+}
+
+/* CARD */
+.card{
+    background:#ffffff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    line-height:1.6;
+}
+
+/* LIST */
+.card p{
+    margin:5px 0;
+}
+
+/* SKILL */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#3498db;
+    color:white;
+    padding:5px 12px;
+    border-radius:15px;
+    font-size:13px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+    font-size:13px;
+    color:#7f8c8d;
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Profil Saya</h2>
+    <div>
+        <a href="#about">Tentang</a>
+        <a href="#data">Data</a>
+        <a href="#skill">Skill</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="https://i.ibb.co.com/yFjjkp0r/10.jpg" alt="Foto Saya">
+    <h1>Dandyan Arveli Rochman</h1>
+    <p>Pelajar | Kelas XII</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>Tentang Saya</h2>
+    <div class="card">
+        <p>
+            Saya merupakan lulusan baru yang memiliki semangat tinggi untuk belajar dan berkembang di dunia kerja. Memiliki kemampuan komunikasi yang baik, disiplin, serta mampu bekerja secara individu maupun tim. Saya siap menghadapi tantangan baru dan berkomitmen untuk memberikan kontribusi terbaik bagi perusahaan.
+        </p>
+    </div>
+</section>
+
+<!-- DATA -->
+<section class="section" id="data">
+    <h2>Data Diri</h2>
+    <div class="card">
+        <p><strong>Nama:</strong> Dandyan Arveli Rochman</p>
+        <p><strong>TTL:</strong> Mojokerto, 25 Juni 2008</p>
+        <p><strong>Sekolah:</strong> SMA NEGERI 1 GONDANG</p>
+        <p><strong>Jurusan:</strong> IPC (IPA Campuran)</p>
+        <p><strong>Email:</strong> Dandyan8910@gmail.com</p>
+    </div>
+</section>
+
+<!-- SKILL -->
+<section class="section" id="skill">
+    <h2>Keahlian</h2>
+    <div class="card">
+        <div class="skills">
+            <div class="skill">Bahasa Inggris (basic/intermediate)</div>
+            <div class="skill">Mampu Beradaptasi Dengan Cepat</div>
+            <div class="skill">Basic desain</div>
+            <div class="skill">Cepat belajar</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Profil Pelajar
+</footer>
+
+</body>
+</html>
